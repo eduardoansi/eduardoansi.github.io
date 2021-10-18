@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+	
+</head>
+
+<body>
+
+
+<div id="observablehq-8861a18e"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@eduardoandrade/processing-p5-js.js?v=3";
+new Runtime().module(define, Inspector.into("#observablehq-8861a18e"));
+</script>
+
+
+
+<p>
+
+
+
+
+<div id="observablehq-chart-b2c9171c"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@d3/bar-chart-race.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-b2c9171c"));
+});
+</script>
+
+
+</body>
+
+</html>
